@@ -1,13 +1,13 @@
 ---
 layout: cheat-sheet
-title: GitHub Git Cheat Sheet
-byline: Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+title: GitHub Git 치트시트
+byline: Git는 Github 활동을 랩톱이나 데스크톱에서 용이하게 할 수 있도록 해주는 오픈소스 분산 버전 관리 시스템입니다. 이 치트 시트는 일반적으로 사용되는 Git 명령어에 관한 설명을 빠르게 참고할 수 있도록 요약되어 있습니다.
 leadingpath: ../
 ---
 
 {% capture colOne %}
-## Install Git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+## Git 설치
+GitHub는 자주 쓰이는 작업을 GUI로 할수 있도록 제공하고 고급 시나리오를 위한 자동으로 업데이트되는 명령줄을 포함하는 데스크톱 클라이언트를 제공합니다.
 
 ### GitHub for Windows
 http://windows.github.com
@@ -15,36 +15,37 @@ http://windows.github.com
 ### GitHub for Mac
 http://mac.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM website.
+Linux 또는 POSIX 시스템을 위한 Git 배포판은 공식 Git SCM 웹사이트에서 구할 수 있습니다.
 
-### Git for all platforms
+### Git 모든 플랫폼 버전
 http://git-scm.com
 
-## Configure tooling
-Configure user information for all local repositories
+## 도구 설정
+모든 로컬 저장소의 사용자 정보 설정 방법
 
 ```$ git config --global user.name "[name]"```
 
-Sets the name you want attached to your commit transactions
+커밋시 붙는 이름을 설정합니다
 
 
 ```$ git config --global user.email "[email address]"```
 
-Sets the email you want attached to your commit transactions
+커밋시 붙는 이메일을 설정합니다
 
 
-## Create repositories
-Start a new repository or obtain one from an existing URL
+## 저장소 생성
+저장소를 새로 만들거나 기존의 URL으로부터 가져옵니다
 
 
 ```$ git init [project-name]```
 
-Creates a new local repository with the specified name
+지정한 이름의 로컬 저장소를 만듭니다
 
 
 ```$ git clone [url]```
 
-Downloads a project and its entire version history
+프로젝트와 모든 버전 기록을 다운받습니다
+
 
 {% endcapture %}
 <div class="col-md-6">
@@ -54,23 +55,23 @@ Downloads a project and its entire version history
 
 {% capture colTwo %}
 
-## Make changes
-Review edits and craft a commit transaction
+## 변경하기
+변경 사항을 검토하고 커밋을 합니다.
 
 
 ```$ git status```
 
-Lists all new or modified files to be committed
+커밋될 새롭거나 수정된 파일의 목록을 보여줍니다
 
 
 ```$ git diff```
 
-Shows file differences not yet staged
+스테이지되지않은 파일의 차이를 표시합니다
 
 
 ```$ git add [file]```
 
-Snapshots the file in preparation for versioning
+버전 관리를 위한 스냅샷 파일을 만듭니다
 
 
 ```$ git diff --staged```
